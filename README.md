@@ -1,6 +1,7 @@
 I used:
 -babel [allows backwards compatibilty of imports/requires so I can use async calls with axios]
 -axios [used to make https requests from node js, resolves issues with fetch that Jest has]
+-dotenv to use a global environment variables file
 
 -importing regenerator-runtime in setupTests.js allows me to use async await in test calls
 
@@ -42,7 +43,7 @@ I used a .env file to hold the Basic Auth key, this repository has the key ommit
 I decided to make seperate .test.js files for each API and create describe() suites to group cases
 
 I chose to perform a series of status code return validations as well as input validations for the key-value pair API,
-I had some trouble with the delete dictionary API.
+I had some trouble with the delete dictionary API, so I tried out passing a mock delete request that would mock a successful call.
 
 Between the documentation for the dictionary API and actual returned status codes I noticed that the
 delete API returns 204 no content rather than the 200 accepted response listed in the API documentation.
