@@ -1,11 +1,11 @@
-#I used:
-##-babel [allows backwards compatibilty of imports/requires so I can use async calls with axios]
-##-axios [used to make https requests from node js, resolves issues with fetch that Jest has]
-##-dotenv to use a global environment variables file
+#I used:\
+##-babel [allows backwards compatibilty of imports/requires so I can use async calls with axios]\
+##-axios [used to make https requests from node js, resolves issues with fetch that Jest has]\
+##-dotenv to use a global environment variables file\
 
-##-importing regenerator-runtime in setupTests.js allows me to use async await in test calls
+##-importing regenerator-runtime in setupTests.js allows me to use async await in test calls\
 
-##using node.js and Jest framework for testing
+##using node.js and Jest framework for testing\
 
 package.json setup as following
 {
@@ -35,10 +35,10 @@ package.json setup as following
     "@babel/preset-env": "^7.18.6",
     "@babel/preset-react": "^7.18.6"
   }
-}
+}\
 
 
-##I used a .env file to hold the Basic Auth key, this repository has the key ommited in the .env file.
+##I used a .env file to hold the Basic Auth key, this repository has the key ommited in the .env file.\
 
 I decided to make seperate .test.js files for each API and create describe() suites to group cases
 
